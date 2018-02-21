@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  display: flex;
+  font-weight: 900;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background-image: url(clouds.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section h1 {
+  margin: 20px 0;
+  font-size: 60px;
+}
+
+section h2 {
+  margin: 10px 0;
+}
+
+.display {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.card {
+  background-color: #EBF5FB;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  flex-basis: 150px;
+}
+
+.hidden {
+  display: none;
+}
+
+.temp p {
+  font-size: 12px;
+}
+
+.loader {
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border-top: 12px solid #EC7063;
+  border-right: 12px solid #5DADE2;
+  border-bottom: 12px solid #58D68D;
+  border-left: 12px solid #F5B041;
+  animation: loading-spin 2s linear infinite;
+}
+
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
